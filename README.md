@@ -1,8 +1,6 @@
 # Personal Website
 
-Personal website with the Jekyll and Ruby. 
+Personal website with simple HTML and CSS.
 
 ## Motivation
-I created this website to understand Jekyll and create website using a new (to me) technology 
-and spend less time in the development using the conventional technologies.
-
+Fun project to create portfolio and learn some web dev along the way. But why web dev? Again, just for fun!
