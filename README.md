@@ -1,6 +1,6 @@
 # Personal Website
 
-Personal website with simple HTML and CSS.
+Personal website to showcase portfolio. Active on [mrboran.github.io](https://mrboran.github.io)
 
 ## Motivation
-Fun project to create portfolio and learn some web dev along the way. But why web dev? Again, just for fun!
+Fun project to create a portfolio and enjoy some age-old web development.
