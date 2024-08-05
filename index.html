@@ -7,8 +7,12 @@
   <link rel="icon" type="image/x-icon" href="images/dall-e-image.png">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Editor-Regular&display=swap');
     body {
-      margin-top: 3rem;
+      margin-top: 4rem;
+      font-family: Georgia;
+/*      font-family: Garamond, serif;;*/
+      background-color: #f8f9fa;
     }
     .highlight {
       background-color: rgb(208, 228, 252);
@@ -17,17 +21,44 @@
     a {
       text-decoration: none;
     }
+    h1, h2, h6 {
+      text-align: center;
+    }
+    .navbar-brand img {
+      margin-right: 10px;
+    }
+    .card-header h6 {
+      margin-bottom: 0;
+    }
+    .card {
+      margin-bottom: 1.5rem;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    .nav-link {
+      margin-right: 1rem;
+    }
+    .nav-link:hover {
+      text-decoration: underline;
+    }
+    .social-icons svg {
+      margin: 0 10px;
+      transition: transform 0.2s;
+    }
+    .social-icons svg:hover {
+      transform: scale(1.2);
+    }
   </style>
 </head>
 <body>
   <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
   <div class="container">
     <div class="row justify-content-md-center">
-      <div class="col-md-9" style="text-align: justify;">
+      <div class="col-md-7">
         <nav class="navbar navbar-expand-lg" style="background-color: #ffffff;">
           <div class="container-fluid">
-            <a href="./index.html" class="navbar-brand">
-              <img src="images/dall-e-image.png" height="28">
+            <a href="./index.html" class="navbar-brand d-flex align-items-center">
+              <img src="images/dall-e-image.png" height="28" alt="Logo">
+              <span>Madhur</span>
             </a>
             <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
               <span class="navbar-toggler-icon"></span>
@@ -42,21 +73,21 @@
             </div>
           </div>
         </nav>
-        <h1 align="center">Madhur</h1>
-        <p>
+        <p class="text-justify">
+          <br><br>
           Hello! 👋 <br><br>
           My name is Madhur, and I am an Artificial Intelligence (AI) Developer. I have a master's degree in AI from the <a href="https://www.rug.nl/">University of Groningen</a>.
         </p>
-        <p>
+        <p class="text-justify">
           In the past, I've been an AI/ML Engineer and a student researcher, delving into Machine Learning, Computer Vision, Distributed Systems, and Robotics. I enjoy exploring new technologies that enhance our lives. If you want to know more about me, <a href="./about.html">click here</a>.
         </p>
-        <p>
+        <p class="text-justify">
           To check out my projects, just keep scrolling.
         </p>
         <br>
-        <h2><a id="research_projects">Research Projects</a></h2>
-        <div class="card text-sm-light">
-          <div class="card-header" style="text-align: left;"><h6>Dual Arm Manipulation of Objects using Deep Reinforcement Learning</h6></div>
+        <h2 id="research_projects">Research Projects</h2>
+        <div class="card">
+          <div class="card-header"><h6>Dual Arm Manipulation of Objects using Deep Reinforcement Learning</h6></div>
           <div class="card-body">
             <ul>
               <li>Master's thesis employing Deep Reinforcement Learning to manipulate objects using a human-inspired robotic setup.</li>
@@ -65,9 +96,8 @@
             </ul>
           </div>
         </div>
-        <br>
-        <div class="card text-sm-light">
-          <div class="card-header" style="text-align: left;"><h6>Corporate Carpooling Web Application</h6></div>
+        <div class="card">
+          <div class="card-header"><h6>Corporate Carpooling Web Application</h6></div>
           <div class="card-body">
             <ul>
               <li>Developed a fault-tolerant, single-page, fully distributed web application with asynchronous communication and deployed on OpenStack.</li>
@@ -75,9 +105,8 @@
             </ul>
           </div>
         </div>
-        <br>
-        <div class="card text-sm-light">
-          <div class="card-header" style="text-align: left;"><h6>From Lego Bricks to Actual Bricks: Style Transfer with CycleGAN</h6></div>
+        <div class="card">
+          <div class="card-header"><h6>From Lego Bricks to Actual Bricks: Style Transfer with CycleGAN</h6></div>
           <div class="card-body">
             <ul>
               <li>Researched and developed a deep learning method for image-to-image translation using <a href="https://arxiv.org/abs/1703.10593">CycleGAN</a>. The dataset used in this project was manually created. The results can be found <a href="https://github.com/KylevdLangemheen/DeepLearning2">here</a>.</li>
@@ -85,9 +114,8 @@
             </ul>
           </div>
         </div>
-        <br>
-        <div class="card text-sm-light">
-          <div class="card-header" style="text-align: left;"><h6>Spatio-temporal Data Indexing</h6></div>
+        <div class="card">
+          <div class="card-header"><h6>Spatio-temporal Data Indexing</h6></div>
           <div class="card-body">
             <ul>
               <li>Developed a system for ISRO (India Space Research Organisation) to index Spatio-temporal data from satellites and other sources for GIS tools using R-trees, decreasing the retrieval time on test data by 40%. Python and Flask were used for the implementation.</li>
@@ -95,8 +123,7 @@
             </ul>
           </div>
         </div>
-        <br>
-        <h2><a id="Experience">Experience</a></h2>
+        <h2 id="Experience">Experience</h2>
         <ol>
           <li>Chair of the Programme Committee for AI/CSS at the <a href="https://www.rug.nl/">University of Groningen</a>.</li>
           <li>Teaching Assistant at the <a href="https://www.rug.nl/">University of Groningen</a>.</li>
@@ -105,7 +132,7 @@
           <li>Artificial Intelligence/ Machine Learning Engineer at <a href="https://audaxlabs.com/">Audax Labs</a>.</li>
           <li>Student Researcher in Virtual Reality at the <a href="https://www.univ-poitiers.fr/en/">Université de Poitiers</a>.</li>
         </ol>
-        <div style="text-align: center;">
+        <div class="social-icons text-center">
           <a href="https://github.com/mrboran/">
             <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
               <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
